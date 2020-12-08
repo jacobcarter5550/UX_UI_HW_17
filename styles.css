@@ -1,0 +1,423 @@
+
+body{
+    margin: 0;
+    font-style: futurina;
+    font-family: 'Raleway', sans-serif;
+}
+.body-background{
+    position: absolute;
+    height: 120vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    left: 0px;
+    top: 0px;
+}
+.cursor-text{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+    z-index: 0;
+    color: red;
+}
+.cursor-container{
+    height: 120vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(20201121-010158.png);
+}
+
+#cursor{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #000;
+    transition: 0.1s;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+h1:hover ~ #cursor{
+    width: 100px;
+    height: 100px;
+    border: 2px dashed #000;
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate
+{
+    0%
+    {
+        transform: translate(-50%,-50%)rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+}
+
+/* actual body start */
+
+.nav_container{
+    display: flex;
+    position: absolute;
+    z-index: 3;
+}
+
+.nav_rightside{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.nav_logo{
+    position: absolute;
+    width: 110px;
+    height: 105.47px;
+    left: 3.47vw;
+    top: 4.87vh;
+}
+
+.nav_logo img{
+    /* size: 110px, 105.47px; */
+    width: 100%;
+}
+
+#nav_arrow{
+    position: absolute;
+    left: 64.1vw;
+    top: 7.9vh;
+    bottom: 97.12%;
+    border: 3px #E3B76D;
+}
+
+#about{
+    position: absolute;
+    width: 92px;
+    height: 30px;
+    left: 68.8vw;
+    top: 7.9vh;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+    margin: 0px;
+
+}
+
+#contact{
+    position: absolute;
+    width: 92px;
+    height: 30px;
+    left: 78.6vw;
+    top: 7.9vh;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+}
+
+#nav_holo{
+    position: absolute;
+    width: 60px;
+    height: 37px;
+    left: 85.9vw;
+    top: 7.25vh;
+
+}
+
+#photography{
+    position: absolute;
+    left: 3.125vw;
+    top: 30.4vh;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    text-decoration: none;
+}
+
+#videography{
+    position: absolute;
+    left: 3.125vw;
+    top: 38.4vh;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    text-decoration: none;
+}
+#web{
+    position: absolute;
+    left: 3.125vw;
+    top: 49.22vh;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    text-decoration: none;
+}
+#design{
+    position: absolute;
+    left: 3.125vw;
+    top: 54.2vh;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    text-decoration: none;
+}
+#writing{
+    position: absolute;
+    left: 3.125vw;
+    top: 62.1vh;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    text-decoration: none;
+}
+#art{
+    position: absolute;
+    left: 3.125vw;
+    top: 70.1vh;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.nav_holo_long{
+    position: absolute;
+    left: 2.5vw;
+    top: 75.7vh;
+}
+
+.nav_dot{
+    position: absolute;
+    left: 6.3vw;
+    top: 25vh;
+}
+
+#clkd_button{
+    cursor: pointer;
+}
+
+/* body style */
+
+.body_rectangle{
+    position: absolute;
+    width: 100vw;
+    height: 50vh;
+    left: 0px;
+    top: 125.9vh;
+    background: #E3B76D;
+}
+
+.down_arrow{
+    position: absolute;
+    width: 150px;
+    height: 78px;
+    left: 44.7vw ;
+    top: 94.6vh;
+    z-index: 2;
+}
+
+.body_name_para{
+    position: absolute;
+    left: 35vw;
+    top: 150vh;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 59px;
+/* identical to box height */
+    text-align: center;
+    color: #000000;
+    z-index: 2;
+}
+
+#para_white{ 
+    color: #ffffff;
+}
+
+.connect_para_back{
+    position: absolute;
+    width: 1440px;
+    height: 627px;
+    left: 0px;
+    top: 182.667vh;
+    background: #FFFFFF;
+}
+
+.body_connect_para{
+    position: absolute;
+    width: 886px;
+    height: 470px;
+    left: 27vw;
+    top: 190.133vh;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+    color: #000000;
+    z-index: 2;
+}
+
+.nav_clkd{
+    display: none;
+}
+
+.clkd_arow{
+    z-index: 2;
+    position: absolute;
+    width: 23px;
+    height: 100%;
+    left: 87.9vw;
+    top: 7.25vh;
+    border: 3px #E3B76D;
+}
+
+.clkd_long{
+    z-index: 2;
+    position: absolute;
+    left: 2.5vw;
+    top: 77.7vh;
+    width: 155.71px;
+    height: 100%;
+}
+
+#button{
+    cursor: pointer;
+}
+
+.aboutshit{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+}
+
+
+/* about--------------------------------------------------------------------- */
+.aboutBody{
+    position:a
+}
+
+.aboutTile{
+left: 0px;
+top: 0px;
+background: url(IMG_0227_2.jpg);
+}
+
+.aboutTile img{
+    width: 100vw;
+}
+
+.aboutWords{
+    background-color: white;
+    width: 100vw;
+    height: 70vh;
+    margin: 0em;
+}
+
+#premiereTile{
+    background-color: #E3B76D;
+    position: absolute;
+    width: 374px;
+    height: 68px;
+    top: 125.1vh;
+    left: 63.2vw;
+}
+
+#premiereTile p{
+    font-size: 45px;
+    margin-top: 20px;
+    margin-bottom: 0em;
+}
+#lightroomTile{
+    background-color: #E3B76D;
+    position: absolute;
+    width: 309px;
+    height: 64px;
+    left: 13.625vw;
+    top: 130vh;
+}
+
+#javascriptTile{
+    position: absolute;
+    background-color: #000000;
+    width: 309px;
+    height: 64px;
+    left: 46vw;
+    top: 136vh;;
+}
+
+#photoshopTile{
+    position: absolute;
+    background-color: #E3B76D;
+    width: 309px;
+    height: 70px;
+    left: 50vw;
+    top: 150vh;
+}
+
+#illustratorTile{
+    position: absolute;
+    background-color: #000000;
+    width: 253px;
+    height: 68px;
+    left: 17vw;
+    top: 175vh;
+}
+
+.aboutDescrip{
+    background-color: black;
+    width: 100vw;
+    height: 113.733vh;
+    margin-top: 0em;
+}
+
+.aboutDescrip p{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+    width: 886px;
+    height: 705px;
+    color: #FFFFFF;
+    margin-left: 26.92%;
+    padding-top: 10%;
+    margin-top: 0em;
+}
